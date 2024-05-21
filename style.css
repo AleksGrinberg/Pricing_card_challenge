@@ -1,0 +1,131 @@
+html{
+    background-color: rgb(232, 241, 255);
+    font-family: "Karla", sans-serif;
+    font-weight: 400;
+}
+
+.container{
+    box-sizing: border-box;
+    width: 800px;
+    height: 500px;
+    border-radius: 5px;
+    box-shadow: 5px 2px 5px 0px rgba(0,0,0,0.33);
+    display: block;
+    margin:auto;
+}
+
+.top-section{
+    background-color: white;
+    height:45%;
+    box-sizing: border-box;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.bottom-section{
+    height:55%;
+    box-sizing: border-box;
+    color:white;
+}
+
+.bottom-left-section{
+    background-color: rgb(42, 178, 175);
+    display: inline-block;
+    width:50%;
+    height:100%;
+    box-sizing: border-box;
+    border-radius: 0px 0px 0px 5px;
+    vertical-align: top;
+}
+
+.bottom-right-section{
+    background-color: rgb(62, 209, 206);
+    display: inline-block;
+    width:50%;
+    height:100%;
+    box-sizing: border-box;
+    border-radius: 0px 0px 5px 0px;
+}
+
+#top-section-text-1{
+    color:rgb(42, 178, 175);
+    padding: 20px 0px 0px 20px;
+}
+
+#top-section-text-2{
+    color:rgb(192, 223, 52);
+    padding: 0px 0px 0px 20px;
+}
+
+#top-section-text-3{
+    color:rgb(147, 153, 157);
+    padding: 10px 40px 0px 20px;
+}
+
+#bottom-section-text-1{
+    padding: 0px 0px 0px 20px;
+}
+
+#price_per_month{
+    padding: 0px 0px 0px 20px;
+    position: relative;
+}
+
+#price{
+    display: inline-block;
+    font-weight: 700;
+    font-size: 35px;
+    margin: 10px 0px 10px 0px;
+}
+
+#time{
+    display: inline-block;
+    position: absolute;
+    top: 7px;
+    margin-left: 12px;
+    opacity: 80%;
+}
+
+#bottom-section-text-2{
+    margin: 10px 0px 30px 20px;
+}
+
+
+#bottom-section-text-3{
+    padding-left: 20px;
+}
+
+#Sign-up-button{
+    padding: 10px 20px 10px 20px;
+    width:90%;
+    background-color: rgb(192, 223, 52);
+    margin:0px 20px 0px 20px;
+    border:none;
+    color:white;
+    font-weight:700;
+    font-size: 15px;
+}
+
+button:hover{
+    background-color:rgb(204, 238, 51);
+    cursor:pointer;
+    transform: scale(1.02)
+}
+
+#bottom-right-list{
+    list-style-type: none;
+    opacity: 0.85;
+    font-size: 0.9rem;
+}
+
+li{
+    margin: 5px 0px 0px 0px;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: black;
+    text-align: center;
+  }
