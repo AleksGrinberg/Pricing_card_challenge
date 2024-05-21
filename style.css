@@ -1,11 +1,23 @@
 html{
+    box-sizing: border-box;
     background-color: rgb(232, 241, 255);
     font-family: "Karla", sans-serif;
     font-weight: 400;
 }
 
+body{
+    padding:20px;
+}
+
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+
+h2, h4, p{
+    margin:0; 
+}
+
 .container{
-    box-sizing: border-box;
     width: 800px;
     height: 500px;
     border-radius: 5px;
@@ -14,16 +26,18 @@ html{
     margin:auto;
 }
 
+.top-section, .bottom-left-section, .bottom-right-section{
+    padding:20px;
+}
+
 .top-section{
     background-color: white;
     height:45%;
-    box-sizing: border-box;
     border-radius: 5px 5px 0px 0px;
 }
 
 .bottom-section{
     height:55%;
-    box-sizing: border-box;
     color:white;
 }
 
@@ -32,7 +46,6 @@ html{
     display: inline-block;
     width:50%;
     height:100%;
-    box-sizing: border-box;
     border-radius: 0px 0px 0px 5px;
     vertical-align: top;
 }
@@ -42,31 +55,28 @@ html{
     display: inline-block;
     width:50%;
     height:100%;
-    box-sizing: border-box;
     border-radius: 0px 0px 5px 0px;
 }
 
 #top-section-text-1{
     color:rgb(42, 178, 175);
-    padding: 20px 0px 0px 20px;
+    margin: 0px 0px 10px 0px;
 }
 
 #top-section-text-2{
     color:rgb(192, 223, 52);
-    padding: 0px 0px 0px 20px;
+    margin-bottom: 30px;
 }
 
 #top-section-text-3{
     color:rgb(147, 153, 157);
-    padding: 10px 40px 0px 20px;
 }
 
 #bottom-section-text-1{
-    padding: 0px 0px 0px 20px;
+    margin: 0px 0px 20px 0px;
 }
 
 #price_per_month{
-    padding: 0px 0px 0px 20px;
     position: relative;
 }
 
@@ -80,41 +90,40 @@ html{
 #time{
     display: inline-block;
     position: absolute;
-    top: 7px;
+    top: 20px;
     margin-left: 12px;
     opacity: 80%;
 }
 
 #bottom-section-text-2{
-    margin: 10px 0px 30px 20px;
+    margin: 0px 0px 60px 0px;
 }
 
-
-#bottom-section-text-3{
-    padding-left: 20px;
-}
-
-#Sign-up-button{
+button{
     padding: 10px 20px 10px 20px;
-    width:90%;
+    width:100%;
     background-color: rgb(192, 223, 52);
-    margin:0px 20px 0px 20px;
     border:none;
     color:white;
     font-weight:700;
     font-size: 15px;
+    border-radius: 5px;
 }
 
 button:hover{
-    background-color:rgb(204, 238, 51);
+    background-color:rgb(201, 233, 56);
     cursor:pointer;
-    transform: scale(1.02)
+    transform: scale(1.03)
 }
 
 #bottom-right-list{
     list-style-type: none;
     opacity: 0.85;
     font-size: 0.9rem;
+}
+
+ul{
+    padding: 0;
 }
 
 li{
@@ -128,4 +137,4 @@ footer {
     width: 100%;
     color: black;
     text-align: center;
-  }
+}
