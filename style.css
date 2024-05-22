@@ -24,6 +24,8 @@ h2, h4, p{
     box-shadow: 5px 2px 5px 0px rgba(0,0,0,0.33);
     display: block;
     margin:auto;
+    overflow: hidden;
+    
 }
 
 .top-section, .bottom-left-section, .bottom-right-section{
@@ -138,3 +140,23 @@ footer {
     color: black;
     text-align: center;
 }
+
+@media(max-width:800px){
+    .container{
+        width: 650px;
+        margin: 0px;
+    }
+}
+
+@media(max-width: 650px){
+    .bottom-left-section, .bottom-right-section, .container{
+        width:100%;
+        height: auto;
+        margin: auto;
+    }   
+
+    .bottom-left-section{
+        border-radius: 0px;
+    }
+}
+
