@@ -79,21 +79,17 @@ h2, h4, p{
 }
 
 #price_per_month{
-    position: relative;
+    display: flex;
+    align-items: center;
 }
 
 #price{
-    display: inline-block;
     font-weight: 700;
     font-size: 35px;
-    margin: 10px 0px 10px 0px;
+    margin: 10px 10px 10px 0px;
 }
 
 #time{
-    display: inline-block;
-    position: absolute;
-    top: 20px;
-    margin-left: 12px;
     opacity: 80%;
 }
 
