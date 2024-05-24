@@ -30,6 +30,7 @@ h2, h4, p{
 
 .top-section, .bottom-left-section, .bottom-right-section{
     padding:20px;
+    flex-grow:1;
 }
 
 .top-section{
@@ -39,24 +40,23 @@ h2, h4, p{
 }
 
 .bottom-section{
+    display: flex;
+    flex-direction: row;
     height:55%;
     color:white;
 }
 
+.bottom-left-section, .bottom-right-section{
+    flex-basis: 50%;
+}
+
 .bottom-left-section{
     background-color: rgb(42, 178, 175);
-    display: inline-block;
-    width:50%;
-    height:100%;
     border-radius: 0px 0px 0px 5px;
-    vertical-align: top;
 }
 
 .bottom-right-section{
     background-color: rgb(62, 209, 206);
-    display: inline-block;
-    width:50%;
-    height:100%;
     border-radius: 0px 0px 5px 0px;
 }
 
@@ -149,6 +149,10 @@ footer {
 }
 
 @media(max-width: 650px){
+    .bottom-section{
+        flex-direction: column;
+    }
+
     .bottom-left-section, .bottom-right-section, .container{
         width:100%;
         height: auto;
